@@ -8,7 +8,7 @@ import {Observable} from "rxjs";
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit {
-  text$: Observable<string>;
+  text$: Observable<any>;
 
   constructor(private dataService: DataService) { }
 

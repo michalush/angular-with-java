@@ -10,6 +10,6 @@ export class DataService {
   constructor(private http: HttpClient) {}
 
   getContent(): Observable<string>{
-    return this.http.get<string>("./../resources/data");
+    return this.http.get<string>("./../resources/data", {responseType: 'text' as 'json'});
   }
 }
